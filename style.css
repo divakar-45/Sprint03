@@ -1,0 +1,316 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+} 
+
+body { 
+    background: #f5f7fb; 
+    color: #333; 
+    line-height: 1.6; 
+} 
+
+.container { 
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 20px; 
+} 
+
+header { 
+    text-align: center; 
+    margin-bottom: 40px; 
+} 
+
+header h1 { 
+    font-size: 2.5rem; 
+    color: #2563eb; 
+    margin-bottom: 10px; 
+} 
+
+header p { 
+   
+    color: #374151;
+
+    font-size: 1.05rem; 
+} 
+
+footer { 
+    text-align: center; 
+    margin-top: 40px; 
+     color: #374151;
+
+    font-size: .95rem; 
+}
+
+.search-section {
+    margin-bottom: 30px;
+}
+
+.search-box { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+} 
+
+.search-box input { 
+    width: 350px; 
+    max-width: 100%; 
+    padding: 14px 16px; 
+    border: 1px solid #d1d5db; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    outline: none; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+} 
+
+.search-box input:focus { 
+    border-color: #2563eb; 
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); 
+} 
+
+.search-box button { 
+    padding: 14px 28px; 
+    background: #2563eb; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background 0.3s; 
+} 
+
+.search-box button:hover { 
+    background: #1d4ed8; 
+} 
+
+#loading { 
+    text-align: center; 
+    font-size: 18px; 
+    color: #2563eb; 
+    margin: 20px 0; 
+} 
+
+#error { 
+    max-width: 700px; 
+    margin: 20px auto; 
+    background: #ffffff; 
+    color: #991b1b; 
+    border: 1px solid #fca5a5;
+    padding: 18px; 
+    border-radius: 10px; 
+    text-align: center;
+}
+
+#error h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile { 
+    display: flex; 
+    gap: 30px; 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    margin-bottom: 30px; 
+    align-items: flex-start; 
+} 
+
+.profile-image img { 
+    width: 180px; 
+    height: 180px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid #2563eb; 
+    background: #e5e7eb;
+} 
+
+.profile-info { 
+    flex: 1; 
+} 
+
+.profile-info h2 { 
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    color: #111827; 
+} 
+
+.profile-info #bio { 
+    margin-bottom: 10px; 
+    color: #4b5563;
+} 
+
+.details { 
+    margin-top: 20px; 
+} 
+
+.details p { 
+    padding: 8px 0; 
+    border-bottom: 1px solid #e5e7eb; 
+    color: #374151;
+} 
+
+#portfolio { 
+    color: #2563eb; 
+    text-decoration: none; 
+    font-weight: 600; 
+} 
+
+#portfolio:hover { 
+    text-decoration: underline; 
+} 
+
+#repoSection { 
+    background: #fff; 
+    border-radius: 15px; 
+    padding: 30px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    margin-bottom: 30px; 
+} 
+
+#repoSection h2 { 
+    margin-bottom: 20px; 
+    font-size: 1.5rem;
+    color: #111827;
+} 
+
+#repoList { 
+    list-style: none; 
+} 
+
+#repoList li { 
+    margin-bottom: 12px; 
+} 
+
+#repoList a { 
+    display: block; 
+    padding: 14px 18px; 
+    background: #ffffff; 
+    color: #1e40af; 
+    border: 1px solid #bfdbfe;
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: background 0.3s; 
+} 
+
+#repoList a:hover { 
+    background: #dbeafe; 
+} 
+
+.battle-section { 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+} 
+
+.battle-section h2 { 
+    margin-bottom: 20px; 
+    font-size: 1.5rem;
+    color: #111827;
+} 
+
+.battle-inputs { 
+    display: flex; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+} 
+
+.battle-inputs input { 
+    flex: 1; 
+    min-width: 220px; 
+    padding: 14px 16px; 
+    border: 1px solid #d1d5db; 
+    border-radius: 8px; 
+    outline: none; 
+    font-size: 16px; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+} 
+
+.battle-inputs input:focus { 
+    border-color: #2563eb; 
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); 
+} 
+::placeholder {
+    color: #6b7280;
+    opacity: 1;
+}
+.battle-inputs button { 
+    padding: 14px 30px; 
+    background: #2563eb; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background 0.3s; 
+} 
+
+.battle-inputs button:hover { 
+    background: #15803d; 
+} 
+
+#battleResult { 
+    padding: 20px; 
+    background: #ffffff; 
+    border: 1px solid #d1d5db; 
+    border-radius: 10px; 
+    min-height: 70px; 
+    color: #374151;
+}
+
+.hidden { 
+    display: none !important; 
+} 
+
+.sr-only { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip: rect(0, 0, 0, 0); 
+    white-space: nowrap; 
+    border: 0; 
+} 
+
+@media (max-width: 768px) { 
+    .container { 
+        padding: 15px; 
+    } 
+    
+    .profile { 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    } 
+    
+    .profile-image img { 
+        width: 150px; 
+        height: 150px; 
+    } 
+    
+    .search-box { 
+        flex-direction: column; 
+    } 
+    
+    .search-box input, 
+    .search-box button { 
+        width: 100%; 
+    } 
+    
+    .battle-inputs { 
+        flex-direction: column; 
+    } 
+    
+    .battle-inputs input, 
+    .battle-inputs button { 
+        width: 100%; 
+    } 
+}

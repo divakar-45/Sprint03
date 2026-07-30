@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GitHub User Finder lets you search GitHub users, view their profile details, latest repositories, and compare two users in Battle Mode.">
+    <meta name="keywords" content="GitHub User Finder, GitHub API, GitHub Profile Search, JavaScript Project, HTML CSS JavaScript">
+    <meta name="author" content="Ranbir Pratap Singh Bhatia">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+
+    <meta property="og:title" content="GitHub User Finder">
+    <meta property="og:description" content="Search GitHub users and compare developers using the GitHub API.">
+    <meta property="og:type" content="website">
+
+    <title>GitHub User Finder | Search GitHub Profiles</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>GitHub User Finder</h1>
+
+<p>Search GitHub profiles and compare developers.</p>
+
+</header>
+
+<main>
+
+<section class="search-section">
+
+<label for="usernameInput" class="sr-only">
+GitHub Username
+</label>
+
+<div class="search-box">
+
+<input
+type="text"
+id="usernameInput"
+placeholder="Enter GitHub Username"
+autocomplete="off"
+aria-label="GitHub Username">
+
+<button
+id="searchBtn"
+type="button">
+Search
+</button>
+
+</div>
+
+</section>
+
+<div
+id="loading"
+class="hidden"
+aria-live="polite">
+Loading...
+</div>
+
+<div
+id="error"
+class="hidden"
+role="alert">
+
+<h2>User Not Found</h2>
+
+<p>Please enter a valid GitHub username.</p>
+
+</div>
+
+<section
+id="profileCard"
+class="profile hidden">
+
+<div class="profile-image">
+
+<img
+id="avatar"
+src=""
+alt="GitHub User Avatar">
+
+</div>
+
+<div class="profile-info">
+
+<h2 id="name"></h2>
+
+<p id="bio"></p>
+
+<div class="details">
+
+<p>
+<strong>Username:</strong>
+<span id="login"></span>
+</p>
+
+<p>
+<strong>Joined:</strong>
+<span id="joinDate"></span>
+</p>
+
+<p>
+<strong>Followers:</strong>
+<span id="followers"></span>
+</p>
+
+<p>
+<strong>Following:</strong>
+<span id="following"></span>
+</p>
+
+<p>
+<strong>Public Repositories:</strong>
+<span id="repos"></span>
+</p>
+
+<p>
+<strong>Portfolio:</strong>
+
+<a
+id="portfolio"
+href="#"
+target="_blank"
+rel="noopener noreferrer">
+Visit Website
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+id="repoSection"
+class="hidden">
+
+<h2>Latest Repositories</h2>
+
+<ul id="repoList"></ul>
+
+</section>
+
+<section class="battle-section">
+
+<h2>Battle Mode</h2>
+
+<div class="battle-inputs">
+
+<input
+type="text"
+id="userOne"
+placeholder="First GitHub Username"
+autocomplete="off"
+aria-label="First GitHub Username">
+
+<input
+type="text"
+id="userTwo"
+placeholder="Second GitHub Username"
+autocomplete="off"
+aria-label="Second GitHub Username">
+
+<button
+id="battleBtn"
+type="button">
+Compare
+</button>
+
+</div>
+
+<div
+id="battleResult"
+aria-live="polite">
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>&copy; 2026 GitHub User Finder. Built using HTML, CSS, JavaScript and GitHub REST API.</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
